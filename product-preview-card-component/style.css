@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fraunces", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  max-width: 640px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 1rem 1rem;
+}
+
+.card-image {
+  width: 50%;
+}
+
+.card-image img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-content {
+  width: 50%;
+  padding: 2rem;
+}
+
+.card-content h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.card-content h1 {
+  color: hsl(212, 21%, 14%);
+  padding: 2rem 2rem 0 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.card-description p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 2rem;
+}
+
+.product-pricing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.product-regular-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.product-price {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+
+/* mobile version */
+@media (max-width: 640px) {
+  .card {
+    margin: 1rem;
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-image img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-content {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .card-content h1 {
+    padding-right: 0;
+  }
+}
+/* mobile version */
+
+/* footer */
+.attribution {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* footer */
